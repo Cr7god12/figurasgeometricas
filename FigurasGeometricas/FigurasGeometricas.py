@@ -4,27 +4,27 @@ import math
 class FigurasGeometricas:
     # Círculo
     @multimethod
-    def area(self, radio: float) -> float:
+    def area(self, radio: float):
         return math.pi * radio * radio
 
     # Rectángulo
     @multimethod
-    def area(self, base: float, altura: float) -> float:
+    def area(self, base: float, altura: float):
         return base * altura
 
     # Triángulo rectángulo
     @multimethod
-    def area(self, base: int, altura: int) -> float:
+    def area(self, base: int, altura: int):
         return 0.5 * base * altura
 
     # Trapecio
     @multimethod
-    def area(self, baseMayor: float, baseMenor: float, altura1: float) -> float:
+    def area(self, baseMayor: float, baseMenor: float, altura1: float):
         return ((baseMayor + baseMenor) * altura1) / 2
 
     # Pentágono regular
     @multimethod
-    def area(self, lado: int, apotema: float) -> float:
+    def area(self, lado: int, apotema: float):
         return (5 * lado * apotema) / 2
 
 fig = FigurasGeometricas()
